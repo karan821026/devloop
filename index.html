@@ -30,12 +30,10 @@ button{font-family:'Poppins',sans-serif;cursor:pointer}
 --s3:0 20px 60px rgba(13,51,32,.18);
 }
 
-/* ── SCROLLBAR ── */
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:#f0ede8}
 ::-webkit-scrollbar-thumb{background:var(--g3);border-radius:3px}
 
-/* ── KEYFRAMES ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
@@ -43,11 +41,11 @@ button{font-family:'Poppins',sans-serif;cursor:pointer}
 @keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
 @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
 
-/* ── NAVBAR ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .3s}
 #nav.solid{background:rgba(250,248,244,.96);backdrop-filter:blur(18px);box-shadow:0 2px 20px rgba(13,51,32,.09)}
 .nav-w{max-width:1200px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;justify-content:space-between}
@@ -69,7 +67,6 @@ button{font-family:'Poppins',sans-serif;cursor:pointer}
 .mob-menu a:hover{background:var(--g6);color:var(--g2)}
 .mob-menu .mob-cta{color:var(--g3);font-weight:700}
 
-/* ── HERO ── */
 #hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1600&q=80') center/cover no-repeat;filter:brightness(.38) saturate(1.2)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,51,32,.92) 0%,rgba(26,92,56,.7) 50%,rgba(45,134,83,.4) 100%)}
@@ -102,13 +99,11 @@ h1.hero-h em{color:#95d5b2;font-style:italic}
 .hbf-txt{font-size:.75rem;font-weight:700;color:var(--g1);line-height:1.3}
 .hbf-sub{font-size:.7rem;color:var(--light);font-weight:400}
 
-/* ── MARQUEE ── */
 #marquee{background:var(--g2);padding:14px 0;overflow:hidden}
 .marquee-track{display:flex;width:max-content;animation:marquee 20s linear infinite}
 .marquee-item{display:flex;align-items:center;gap:8px;padding:0 32px;color:rgba(255,255,255,.85);font-size:.82rem;font-weight:500;white-space:nowrap}
 .marquee-dot{color:var(--amber2);font-size:.9rem}
 
-/* ── SECTION COMMON ── */
 section{padding:88px 24px}
 .sw{max-width:1200px;margin:0 auto}
 .stag{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);display:block;margin-bottom:8px}
@@ -118,7 +113,6 @@ section{padding:88px 24px}
 .shdr.ctr{text-align:center}
 .shdr.ctr .ss{margin:0 auto}
 
-/* ── PRODUCTS ── */
 #products{background:var(--beige2)}
 .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .pc{background:var(--white);border-radius:var(--rl);overflow:hidden;box-shadow:var(--s1);transition:transform .3s,box-shadow .3s;position:relative}
@@ -137,7 +131,6 @@ section{padding:88px 24px}
 .btn-order{width:100%;padding:12px;border-radius:50px;background:linear-gradient(135deg,var(--g2),var(--g3));color:#fff;font-size:.85rem;font-weight:600;border:none;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:7px}
 .btn-order:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(29,92,56,.3)}
 
-/* ── COMBO ── */
 .combo-wrap{margin-top:26px;background:linear-gradient(135deg,var(--g1) 0%,#1e5c36 50%,#2d6e45 100%);border-radius:var(--rl);overflow:hidden;box-shadow:var(--s3);display:grid;grid-template-columns:1fr 1fr;transition:transform .3s;position:relative}
 .combo-wrap:hover{transform:translateY(-5px)}
 .combo-lim{position:absolute;top:20px;right:20px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:7px 16px;border-radius:50px;animation:pulse 2.5s ease-in-out infinite;z-index:2}
@@ -157,7 +150,6 @@ section{padding:88px 24px}
 .btn-combo{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;padding:14px 36px;border-radius:50px;font-size:.9rem;font-weight:700;border:none;transition:all .25s;cursor:pointer}
 .btn-combo:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,148,58,.45)}
 
-/* ── UPCOMING ── */
 #upcoming{background:var(--beige)}
 .ug{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .uc{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--beige3);transition:all .3s;position:relative}
@@ -173,7 +165,6 @@ section{padding:88px 24px}
 .btn-notify{width:100%;padding:10px;border-radius:50px;background:transparent;color:var(--g2);font-size:.8rem;font-weight:600;border:2px solid var(--g5);transition:all .25s}
 .btn-notify:hover,.btn-notify.done{background:var(--g6);border-color:var(--g4);color:var(--g2)}
 
-/* ── WHY ── */
 #why{background:linear-gradient(160deg,var(--g1) 0%,#1e5c36 100%)}
 #why .sh{color:#fff}
 #why .stag{color:var(--g5)}
@@ -185,7 +176,6 @@ section{padding:88px 24px}
 .wc-t{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:9px}
 .wc-d{font-size:.82rem;color:rgba(255,255,255,.58);line-height:1.7}
 
-/* ── ABOUT ── */
 #about{background:var(--beige2)}
 .about-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 .about-imgs{position:relative;height:480px}
@@ -198,7 +188,6 @@ section{padding:88px 24px}
 .stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--g3)}
 .stat-l{font-size:.75rem;color:var(--light);margin-top:3px}
 
-/* ── TESTIMONIALS ── */
 #testi{background:var(--beige)}
 .tg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .tc{background:var(--white);border-radius:var(--r);padding:26px;border:1px solid var(--beige3);box-shadow:var(--s1);transition:all .3s;position:relative;overflow:hidden}
@@ -212,7 +201,6 @@ section{padding:88px 24px}
 .tc-loc{font-size:.74rem;color:var(--light)}
 .tc-ver{font-size:.68rem;color:var(--g3);margin-top:3px}
 
-/* ── FAQ ── */
 #faq{background:var(--beige2)}
 .faq-l{max-width:740px;margin:0 auto}
 .fi{background:var(--white);border-radius:var(--r);margin-bottom:12px;border:1px solid var(--beige3);overflow:hidden;transition:box-shadow .3s}
@@ -223,7 +211,6 @@ section{padding:88px 24px}
 .fa{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 24px;font-size:.84rem;color:var(--light);line-height:1.78}
 .fi.open .fa{max-height:220px;padding-bottom:20px}
 
-/* ── CONTACT ── */
 #contact{background:var(--beige)}
 .cg{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
 .ci{display:flex;align-items:center;gap:16px;padding:18px 22px;background:var(--white);border-radius:var(--r);border:1px solid var(--beige3);margin-bottom:14px;transition:all .3s}
@@ -242,7 +229,6 @@ section{padding:88px 24px}
 .btn-form{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;padding:13px 28px;border-radius:50px;font-size:.88rem;font-weight:700;border:none;cursor:pointer;transition:all .25s;margin-top:20px}
 .btn-form:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,148,58,.4)}
 
-/* ── FOOTER ── */
 footer{background:var(--g1);padding:64px 24px 24px}
 .fw{max-width:1200px;margin:0 auto}
 .ft{display:grid;grid-template-columns:2.2fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:32px}
@@ -258,15 +244,87 @@ footer{background:var(--g1);padding:64px 24px 24px}
 .fb-copy{font-size:.78rem;color:rgba(255,255,255,.3)}
 .fb-love{font-size:.78rem;color:rgba(255,255,255,.3)}
 .fb-love span{color:var(--g5)}
+.admin-link{color:rgba(255,255,255,.15);cursor:pointer;transition:color .2s;margin-left:12px}
+.admin-link:hover{color:rgba(255,255,255,.4)}
 
-/* ── TOAST & BACK-TO-TOP ── */
 #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--g1);color:#fff;padding:12px 26px;border-radius:50px;font-size:.84rem;opacity:0;pointer-events:none;z-index:9999;transition:all .3s;box-shadow:var(--s3);white-space:nowrap}
 #toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 #btt{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:50%;background:var(--g2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:pointer;border:none;box-shadow:var(--s2);opacity:0;pointer-events:none;transition:all .3s;z-index:888}
 #btt.on{opacity:1;pointer-events:all}
 #btt:hover{background:var(--g1);transform:translateY(-2px)}
 
-/* ── RESPONSIVE ── */
+/* Admin Panel Styles */
+.admin-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);z-index:2000;justify-content:center;align-items:flex-start;padding:30px 20px;overflow-y:auto}
+.admin-overlay.active{display:flex}
+.admin-panel{background:var(--white);border-radius:24px;width:100%;max-width:950px;box-shadow:var(--s3);overflow:hidden;animation:slideUp .4s ease}
+.admin-header{background:linear-gradient(135deg,var(--g1),var(--g2));padding:28px 32px;color:#fff;display:flex;justify-content:space-between;align-items:center}
+.admin-header h2{font-family:'Playfair Display',serif;font-size:1.5rem;display:flex;align-items:center;gap:10px}
+.admin-close{background:rgba(255,255,255,.15);border:none;color:#fff;width:42px;height:42px;border-radius:50%;font-size:1.4rem;cursor:pointer;transition:all .3s;display:flex;align-items:center;justify-content:center}
+.admin-close:hover{background:rgba(255,255,255,.25);transform:rotate(90deg)}
+.admin-body{padding:32px}
+.admin-form{background:var(--beige2);padding:28px;border-radius:18px;margin-bottom:28px}
+.admin-form h3{font-family:'Playfair Display',serif;color:var(--g1);margin-bottom:22px;font-size:1.15rem;display:flex;align-items:center;gap:8px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{display:flex;flex-direction:column}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:.82rem;font-weight:600;color:var(--mid);margin-bottom:6px}
+.form-group input,.form-group textarea,.form-group select{padding:12px 16px;border:2px solid var(--beige3);border-radius:12px;font-family:'Poppins',sans-serif;font-size:.9rem;transition:all .2s;outline:none;background:var(--white)}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(45,134,83,.1)}
+.form-group textarea{resize:vertical;min-height:80px}
+.image-upload-area{border:2px dashed var(--beige3);border-radius:14px;padding:28px;text-align:center;cursor:pointer;transition:all .3s;background:var(--white);position:relative}
+.image-upload-area:hover{border-color:var(--g3);background:var(--g6)}
+.image-upload-area.dragover{border-color:var(--g3);background:var(--g6);transform:scale(1.01)}
+.image-upload-area input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.image-upload-area .upload-icon{font-size:2.5rem;margin-bottom:10px}
+.image-upload-area p{color:var(--light);font-size:.85rem;margin-bottom:6px}
+.image-upload-area small{color:var(--light);font-size:.75rem}
+.image-preview{margin-top:16px;position:relative;display:inline-block}
+.image-preview img{max-width:200px;max-height:150px;border-radius:12px;object-fit:cover;box-shadow:var(--s1)}
+.image-preview .remove-img{position:absolute;top:-8px;right:-8px;width:26px;height:26px;border-radius:50%;background:#ff4757;color:#fff;border:none;font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.image-preview .remove-img:hover{transform:scale(1.1)}
+.admin-btns{display:flex;gap:12px;margin-top:20px}
+.btn-save{background:linear-gradient(135deg,var(--g2),var(--g3));color:#fff;padding:12px 28px;border-radius:50px;font-weight:600;border:none;transition:all .25s}
+.btn-save:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(45,134,83,.3)}
+.btn-reset{background:var(--beige3);color:var(--mid);padding:12px 28px;border-radius:50px;font-weight:600;border:none;transition:all .25s}
+.btn-reset:hover{background:#ddd}
+.admin-products-list h3{font-family:'Playfair Display',serif;color:var(--g1);margin-bottom:18px;font-size:1.15rem}
+.admin-product-item{display:flex;align-items:center;gap:18px;padding:18px;background:var(--beige2);border-radius:14px;margin-bottom:14px;transition:all .3s}
+.admin-product-item:hover{box-shadow:var(--s1);transform:translateX(4px)}
+.admin-product-item img{width:70px;height:70px;object-fit:cover;border-radius:12px;flex-shrink:0}
+.admin-product-info{flex:1}
+.admin-product-info h4{font-size:1rem;color:var(--g1);margin-bottom:4px}
+.admin-product-info p{font-size:.78rem;color:var(--light);margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.admin-product-info span{color:var(--g3);font-weight:700;font-size:.95rem}
+.admin-product-info .badge-info{font-size:.7rem;color:var(--amber);margin-left:8px;font-weight:500}
+.admin-actions{display:flex;gap:10px}
+.btn-edit,.btn-delete{padding:10px 18px;border:none;border-radius:10px;font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .25s;display:flex;align-items:center;gap:5px}
+.btn-edit{background:var(--g6);color:var(--g2)}
+.btn-edit:hover{background:var(--g5)}
+.btn-delete{background:#ffe0e3;color:#dc3545}
+.btn-delete:hover{background:#ffccd2}
+.no-products{text-align:center;padding:40px;color:var(--light)}
+.no-products .empty-icon{font-size:3rem;margin-bottom:12px}
+
+/* Admin Login */
+.admin-login-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);z-index:2000;justify-content:center;align-items:center;padding:20px}
+.admin-login-overlay.active{display:flex}
+.admin-login-box{background:var(--white);padding:40px;border-radius:24px;max-width:400px;width:100%;text-align:center;animation:slideUp .4s ease;box-shadow:var(--s3)}
+.admin-login-box .login-icon{font-size:3rem;margin-bottom:16px}
+.admin-login-box h3{font-family:'Playfair Display',serif;color:var(--g1);margin-bottom:8px;font-size:1.4rem}
+.admin-login-box p{color:var(--light);font-size:.85rem;margin-bottom:24px}
+.admin-login-box input{width:100%;padding:14px 18px;border:2px solid var(--beige3);border-radius:12px;font-family:'Poppins',sans-serif;font-size:1rem;margin-bottom:16px;outline:none;transition:all .2s;text-align:center}
+.admin-login-box input:focus{border-color:var(--g3)}
+.login-error{color:#dc3545;font-size:.82rem;margin-bottom:12px;display:none}
+.login-btns{display:flex;flex-direction:column;gap:10px}
+.btn-login{background:linear-gradient(135deg,var(--g2),var(--g3));color:#fff;padding:14px;border-radius:50px;font-weight:600;border:none;font-size:.95rem;cursor:pointer;transition:all .25s}
+.btn-login:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(45,134,83,.3)}
+.btn-cancel-login{background:var(--beige3);color:var(--mid);padding:12px;border-radius:50px;font-weight:500;border:none;font-size:.9rem;cursor:pointer;transition:all .25s}
+.btn-cancel-login:hover{background:#ddd}
+
+/* Combo Section Admin */
+.combo-section-admin{margin-top:28px;padding-top:28px;border-top:2px solid var(--beige3)}
+.combo-section-admin h4{font-family:'Playfair Display',serif;color:var(--g1);margin-bottom:18px;font-size:1.1rem}
+
 @media(max-width:1024px){
   .hero-c{grid-template-columns:1fr;text-align:center}
   .hero-sub{margin:0 auto 34px}
@@ -285,6 +343,7 @@ footer{background:var(--g1);padding:64px 24px 24px}
   .combo-img-side{min-height:200px}
   .ft{grid-template-columns:1fr 1fr;gap:36px}
   .cg{grid-template-columns:1fr;gap:36px}
+  .form-row{grid-template-columns:1fr}
 }
 @media(max-width:768px){
   section{padding:64px 20px}
@@ -299,6 +358,8 @@ footer{background:var(--g1);padding:64px 24px 24px}
   .fb{flex-direction:column;text-align:center}
   .combo-body{padding:28px 24px}
   .social-row{flex-direction:column}
+  .admin-product-item{flex-direction:column;text-align:center}
+  .admin-actions{width:100%;justify-content:center}
 }
 @media(max-width:480px){
   .ug{grid-template-columns:1fr}
@@ -383,7 +444,6 @@ footer{background:var(--g1);padding:64px 24px 24px}
     <div class="marquee-item"><span class="marquee-dot">✦</span> Fast Pan-India Delivery</div>
     <div class="marquee-item"><span class="marquee-dot">✦</span> 1000+ Happy Customers</div>
     <div class="marquee-item"><span class="marquee-dot">✦</span> Eco-Friendly Packaging</div>
-    <!-- duplicate for seamless loop -->
     <div class="marquee-item"><span class="marquee-dot">✦</span> 100% Natural Ingredients</div>
     <div class="marquee-item"><span class="marquee-dot">✦</span> Chemical Free Formula</div>
     <div class="marquee-item"><span class="marquee-dot">✦</span> Trusted Ayurvedic Brand</div>
@@ -402,69 +462,27 @@ footer{background:var(--g1);padding:64px 24px 24px}
       <h2 class="sh">Pure Herbal Powders, Straight from Nature</h2>
       <p class="ss">Sourced with care, sun-dried naturally, and packed fresh — every batch made to preserve maximum potency and purity.</p>
     </header>
-    <div class="pg">
-
-      <!-- Amla -->
-      <article class="pc reveal">
-        <div class="pc-img">
-          <span class="nat-badge">100% Natural</span>
-          <img src="https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=600&q=80" alt="Amla powder in a wooden bowl with fresh amla berries" loading="lazy"/>
-        </div>
-        <div class="pc-body">
-          <h3 class="pc-name">Amla Powder</h3>
-          <p class="pc-desc">The richest natural source of Vitamin C. Strengthens hair roots, reduces grey hair, prevents hair fall, and promotes thick, lustrous growth.</p>
-          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
-        </div>
-      </article>
-
-      <!-- Reetha -->
-      <article class="pc reveal">
-        <div class="pc-img">
-          <span class="nat-badge">SLS Free</span>
-          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&q=80" alt="Reetha soapnut powder — natural herbal cleanser" loading="lazy"/>
-        </div>
-        <div class="pc-body">
-          <h3 class="pc-name">Reetha Powder</h3>
-          <p class="pc-desc">Nature's own shampoo. Gently cleanses scalp, fights dandruff, adds natural shine and volume without stripping moisture or causing irritation.</p>
-          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
-        </div>
-      </article>
-
-      <!-- Shikakai -->
-      <article class="pc reveal">
-        <div class="pc-img">
-          <span class="nat-badge">Ayurvedic</span>
-          <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=600&q=80" alt="Shikakai powder — herbal hair conditioner" loading="lazy"/>
-        </div>
-        <div class="pc-body">
-          <h3 class="pc-name">Shikakai Powder</h3>
-          <p class="pc-desc">The "fruit for hair" in Ayurveda. Conditions, detangles and softens hair naturally, maintains scalp pH and promotes healthy hair growth.</p>
-          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
-        </div>
-      </article>
-
+    <div class="pg" id="productsGrid">
+      <!-- Products loaded dynamically -->
     </div>
 
     <!-- COMBO -->
-    <div class="combo-wrap reveal">
+    <div class="combo-wrap reveal" id="comboSection">
       <span class="combo-lim">🔥 Limited Offer</span>
       <div class="combo-img-side">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Natural herbal hair care combo pack" loading="lazy"/>
+        <img id="comboImage" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Natural herbal hair care combo pack" loading="lazy"/>
       </div>
       <div class="combo-body">
         <div class="combo-tag">✦ Best Value Bundle — Save Big</div>
-        <h3 class="combo-ttl">Hair Care Combo Offer</h3>
-        <p class="combo-inc">
+        <h3 class="combo-ttl" id="comboTitle">Hair Care Combo Offer</h3>
+        <p class="combo-inc" id="comboDesc">
           <span>Amla Powder 500g</span> + <span>Reetha Powder 500g</span> + <span>Shikakai Powder 500g</span><br/>
           Complete Ayurvedic hair care in one power-packed combo — wash, treat, and nourish naturally.
         </p>
         <div class="combo-prices">
-          <span class="combo-old">₹897</span>
-          <span class="combo-new">₹599</span>
-          <span class="combo-save">You Save ₹298</span>
+          <span class="combo-old" id="comboOldPrice">₹897</span>
+          <span class="combo-new" id="comboNewPrice">₹599</span>
+          <span class="combo-save" id="comboSave">You Save ₹298</span>
         </div>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-combo">🛒 Grab This Combo</a>
       </div>
@@ -749,55 +767,595 @@ footer{background:var(--g1);padding:64px 24px 24px}
       </div>
     </div>
     <div class="fb">
-      <span class="fb-copy">© 2024 HerbSutra. All rights reserved.</span>
+      <span class="fb-copy">© 2024 HerbSutra. All rights reserved. <a href="#admin" class="admin-link" id="adminTrigger">⚙</a></span>
       <span class="fb-love">Made with <span>💚</span> for natural wellness</span>
     </div>
   </div>
 </footer>
 
+<!-- Admin Login Overlay -->
+<div class="admin-login-overlay" id="adminLoginOverlay">
+  <div class="admin-login-box">
+    <div class="login-icon">🔐</div>
+    <h3>Admin Access</h3>
+    <p>Enter the admin password to continue</p>
+    <input type="password" id="adminPassword" placeholder="Enter password" onkeypress="if(event.key==='Enter')verifyAdmin()">
+    <div class="login-error" id="loginError">❌ Incorrect password. Try again.</div>
+    <div class="login-btns">
+      <button class="btn-login" onclick="verifyAdmin()">🔓 Login</button>
+      <button class="btn-cancel-login" onclick="closeAdminLogin()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Admin Panel -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-panel">
+    <div class="admin-header">
+      <h2>⚙️ Admin Panel</h2>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div class="admin-body">
+      <!-- Add/Edit Product Form -->
+      <div class="admin-form">
+        <h3 id="formTitle">➕ Add New Product</h3>
+        <input type="hidden" id="editIndex" value="-1">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Product Name *</label>
+            <input type="text" id="productName" placeholder="e.g. Amla Powder">
+          </div>
+          <div class="form-group">
+            <label>Price (₹) *</label>
+            <input type="number" id="productPrice" placeholder="e.g. 299">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Weight/Quantity</label>
+            <input type="text" id="productWeight" placeholder="e.g. 250g">
+          </div>
+          <div class="form-group">
+            <label>Badge Text</label>
+            <input type="text" id="productBadge" placeholder="e.g. 100% Natural">
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Description</label>
+          <textarea id="productDesc" placeholder="Brief product description..."></textarea>
+        </div>
+        <div class="form-group full">
+          <label>Product Image *</label>
+          <div class="image-upload-area" id="imageUploadArea">
+            <input type="file" id="imageInput" accept="image/*" onchange="handleImageUpload(event)">
+            <div class="upload-icon">📷</div>
+            <p>Click to upload or drag & drop</p>
+            <small>Supports: JPG, PNG, GIF (Max 2MB)</small>
+          </div>
+          <div class="image-preview" id="imagePreview" style="display:none;">
+            <img id="previewImg" src="" alt="Preview">
+            <button class="remove-img" onclick="removeImage()">✕</button>
+          </div>
+          <input type="hidden" id="productImage" value="">
+        </div>
+        <div class="admin-btns">
+          <button class="btn-save" onclick="saveProduct()">💾 Save Product</button>
+          <button class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+        </div>
+      </div>
+
+      <!-- Combo Section Edit -->
+      <div class="combo-section-admin">
+        <h4>🎁 Edit Combo Offer</h4>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Combo Title</label>
+            <input type="text" id="comboTitleInput" placeholder="Hair Care Combo Offer">
+          </div>
+          <div class="form-group">
+            <label>New Price (₹)</label>
+            <input type="number" id="comboNewPriceInput" placeholder="599">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Old Price (₹)</label>
+            <input type="number" id="comboOldPriceInput" placeholder="897">
+          </div>
+          <div class="form-group">
+            <label>Combo Image</label>
+            <input type="file" id="comboImageInput" accept="image/*" onchange="handleComboImageUpload(event)">
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Combo Description (use &lt;span&gt; for highlights)</label>
+          <textarea id="comboDescInput" placeholder="Amla + Reetha + Shikakai combo..."></textarea>
+        </div>
+        <button class="btn-save" onclick="saveCombo()">💾 Save Combo</button>
+      </div>
+
+      <!-- Products List -->
+      <div class="admin-products-list" style="margin-top:28px;">
+        <h3>📦 Current Products</h3>
+        <div id="adminProductsList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="toast" role="status" aria-live="polite"></div>
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
 <script>
-// Hamburger
-const hbg=document.getElementById('hbg'),mob=document.getElementById('mob');
-hbg.addEventListener('click',()=>mob.classList.toggle('open'));
-function cM(){mob.classList.remove('open')}
+// ==========================================
+// CONSTANTS
+// ==========================================
+const ORDER_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform";
+const ADMIN_PASSWORD = "herbsutra2025";
 
-// Navbar
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>{
-  nav.classList.toggle('solid',scrollY>20);
-  document.getElementById('btt').classList.toggle('on',scrollY>400);
+// Default Products
+const DEFAULT_PRODUCTS = [
+  {
+    name: "Amla Powder",
+    price: 299,
+    weight: "250g",
+    badge: "100% Natural",
+    desc: "The richest natural source of Vitamin C. Strengthens hair roots, reduces grey hair, prevents hair fall, and promotes thick, lustrous growth.",
+    image: "https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=600&q=80"
+  },
+  {
+    name: "Reetha Powder",
+    price: 299,
+    weight: "250g",
+    badge: "SLS Free",
+    desc: "Nature's own shampoo. Gently cleanses scalp, fights dandruff, adds natural shine and volume without stripping moisture or causing irritation.",
+    image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&q=80"
+  },
+  {
+    name: "Shikakai Powder",
+    price: 299,
+    weight: "250g",
+    badge: "Ayurvedic",
+    desc: "The \"fruit for hair\" in Ayurveda. Conditions, detangles and softens hair naturally, maintains scalp pH and promotes healthy hair growth.",
+    image: "https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=600&q=80"
+  }
+];
+
+const DEFAULT_COMBO = {
+  title: "Hair Care Combo Offer",
+  desc: "<span>Amla Powder 500g</span> + <span>Reetha Powder 500g</span> + <span>Shikakai Powder 500g</span><br/>Complete Ayurvedic hair care in one power-packed combo — wash, treat, and nourish naturally.",
+  oldPrice: 897,
+  newPrice: 599,
+  image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+};
+
+// ==========================================
+// LOCALSTORAGE FUNCTIONS
+// ==========================================
+function loadProducts() {
+  const data = localStorage.getItem('herbsutra_products');
+  if (!data) {
+    localStorage.setItem('herbsutra_products', JSON.stringify(DEFAULT_PRODUCTS));
+    return DEFAULT_PRODUCTS;
+  }
+  return JSON.parse(data);
+}
+
+function saveProductsToStorage(products) {
+  localStorage.setItem('herbsutra_products', JSON.stringify(products));
+}
+
+function addProduct(product) {
+  const products = loadProducts();
+  products.push(product);
+  saveProductsToStorage(products);
+  return products;
+}
+
+function updateProduct(index, product) {
+  const products = loadProducts();
+  if (index >= 0 && index < products.length) {
+    products[index] = product;
+    saveProductsToStorage(products);
+  }
+  return products;
+}
+
+function deleteProduct(index) {
+  const products = loadProducts();
+  if (index >= 0 && index < products.length) {
+    products.splice(index, 1);
+    saveProductsToStorage(products);
+  }
+  return products;
+}
+
+function loadCombo() {
+  const data = localStorage.getItem('herbsutra_combo');
+  if (!data) {
+    localStorage.setItem('herbsutra_combo', JSON.stringify(DEFAULT_COMBO));
+    return DEFAULT_COMBO;
+  }
+  return JSON.parse(data);
+}
+
+function saveComboToStorage(combo) {
+  localStorage.setItem('herbsutra_combo', JSON.stringify(combo));
+}
+
+// ==========================================
+// RENDER PRODUCTS
+// ==========================================
+function renderProducts() {
+  const products = loadProducts();
+  const grid = document.getElementById('productsGrid');
+  grid.innerHTML = '';
+
+  if (products.length === 0) {
+    grid.innerHTML = '<p style="text-align:center;color:var(--light);grid-column:1/-1;padding:40px;">No products available.</p>';
+    return;
+  }
+
+  products.forEach((product, index) => {
+    const card = document.createElement('article');
+    card.className = 'pc reveal on';
+    card.style.animationDelay = `${index * 0.1}s`;
+
+    card.innerHTML = `
+      <div class="pc-img">
+        ${product.badge ? `<span class="nat-badge">${product.badge}</span>` : ''}
+        <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600'"/>
+      </div>
+      <div class="pc-body">
+        <h3 class="pc-name">${product.name}</h3>
+        <p class="pc-desc">${product.desc || ''}</p>
+        <div class="pc-price">
+          <span class="pc-price-val">₹${product.price}</span>
+          ${product.weight ? `<span class="pc-price-wt">/ ${product.weight}</span>` : ''}
+        </div>
+        <a href="${ORDER_FORM_URL}" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderCombo() {
+  const combo = loadCombo();
+  document.getElementById('comboTitle').textContent = combo.title;
+  document.getElementById('comboDesc').innerHTML = combo.desc;
+  document.getElementById('comboOldPrice').textContent = `₹${combo.oldPrice}`;
+  document.getElementById('comboNewPrice').textContent = `₹${combo.newPrice}`;
+  document.getElementById('comboSave').textContent = `You Save ₹${combo.oldPrice - combo.newPrice}`;
+  document.getElementById('comboImage').src = combo.image;
+}
+
+// ==========================================
+// ADMIN PANEL
+// ==========================================
+function openAdminLogin() {
+  document.getElementById('adminLoginOverlay').classList.add('active');
+  document.getElementById('adminPassword').value = '';
+  document.getElementById('loginError').style.display = 'none';
+  setTimeout(() => document.getElementById('adminPassword').focus(), 100);
+}
+
+function closeAdminLogin() {
+  document.getElementById('adminLoginOverlay').classList.remove('active');
+}
+
+function verifyAdmin() {
+  const pwd = document.getElementById('adminPassword').value;
+  if (pwd === ADMIN_PASSWORD) {
+    closeAdminLogin();
+    openAdmin();
+  } else {
+    document.getElementById('loginError').style.display = 'block';
+    document.getElementById('adminPassword').value = '';
+    document.getElementById('adminPassword').focus();
+  }
+}
+
+function openAdmin() {
+  document.getElementById('adminOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+  renderAdminProducts();
+  loadComboForm();
+  resetForm();
+}
+
+function closeAdmin() {
+  document.getElementById('adminOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function renderAdminProducts() {
+  const products = loadProducts();
+  const list = document.getElementById('adminProductsList');
+  list.innerHTML = '';
+
+  if (products.length === 0) {
+    list.innerHTML = '<div class="no-products"><div class="empty-icon">📦</div><p>No products yet. Add your first product above.</p></div>';
+    return;
+  }
+
+  products.forEach((product, index) => {
+    const item = document.createElement('div');
+    item.className = 'admin-product-item';
+    item.innerHTML = `
+      <img src="${product.image}" alt="${product.name}" onerror="this.src='https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600'">
+      <div class="admin-product-info">
+        <h4>${product.name}</h4>
+        <p>${product.desc || 'No description'}</p>
+        <span>₹${product.price}</span>
+        ${product.badge ? `<span class="badge-info">${product.badge}</span>` : ''}
+      </div>
+      <div class="admin-actions">
+        <button class="btn-edit" onclick="editProduct(${index})">✏️ Edit</button>
+        <button class="btn-delete" onclick="confirmDelete(${index})">🗑️ Delete</button>
+      </div>
+    `;
+    list.appendChild(item);
+  });
+}
+
+// ==========================================
+// IMAGE UPLOAD
+// ==========================================
+function handleImageUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  if (file.size > 2 * 1024 * 1024) {
+    toast('Image size must be less than 2MB!');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const base64 = e.target.result;
+    document.getElementById('productImage').value = base64;
+    document.getElementById('previewImg').src = base64;
+    document.getElementById('imagePreview').style.display = 'inline-block';
+    document.getElementById('imageUploadArea').style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function removeImage() {
+  document.getElementById('productImage').value = '';
+  document.getElementById('previewImg').src = '';
+  document.getElementById('imagePreview').style.display = 'none';
+  document.getElementById('imageUploadArea').style.display = 'block';
+  document.getElementById('imageInput').value = '';
+}
+
+function handleComboImageUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  if (file.size > 2 * 1024 * 1024) {
+    toast('Image size must be less than 2MB!');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const combo = loadCombo();
+    combo.image = e.target.result;
+    saveComboToStorage(combo);
+    renderCombo();
+    toast('✅ Combo image updated!');
+  };
+  reader.readAsDataURL(file);
+}
+
+// Drag and drop
+const uploadArea = document.getElementById('imageUploadArea');
+if (uploadArea) {
+  uploadArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadArea.classList.add('dragover');
+  });
+  uploadArea.addEventListener('dragleave', () => {
+    uploadArea.classList.remove('dragover');
+  });
+  uploadArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadArea.classList.remove('dragover');
+    const files = e.dataTransfer.files;
+    if (files.length) {
+      document.getElementById('imageInput').files = files;
+      handleImageUpload({ target: { files: files } });
+    }
+  });
+}
+
+// ==========================================
+// PRODUCT CRUD
+// ==========================================
+function saveProduct() {
+  const name = document.getElementById('productName').value.trim();
+  const price = parseInt(document.getElementById('productPrice').value);
+  const weight = document.getElementById('productWeight').value.trim();
+  const badge = document.getElementById('productBadge').value.trim();
+  const desc = document.getElementById('productDesc').value.trim();
+  const image = document.getElementById('productImage').value.trim();
+  const editIndex = parseInt(document.getElementById('editIndex').value);
+
+  if (!name || !price || !image) {
+    toast('Please fill in all required fields!');
+    return;
+  }
+
+  const product = { name, price, weight, badge, desc, image };
+
+  if (editIndex >= 0) {
+    updateProduct(editIndex, product);
+    toast(`✅ "${name}" updated successfully!`);
+  } else {
+    addProduct(product);
+    toast(`✅ "${name}" added successfully!`);
+  }
+
+  resetForm();
+  renderAdminProducts();
+  renderProducts();
+}
+
+function editProduct(index) {
+  const products = loadProducts();
+  const product = products[index];
+
+  document.getElementById('productName').value = product.name;
+  document.getElementById('productPrice').value = product.price;
+  document.getElementById('productWeight').value = product.weight || '';
+  document.getElementById('productBadge').value = product.badge || '';
+  document.getElementById('productDesc').value = product.desc || '';
+  document.getElementById('productImage').value = product.image;
+  document.getElementById('editIndex').value = index;
+  document.getElementById('formTitle').textContent = '✏️ Edit Product';
+
+  // Show preview
+  document.getElementById('previewImg').src = product.image;
+  document.getElementById('imagePreview').style.display = 'inline-block';
+  document.getElementById('imageUploadArea').style.display = 'none';
+
+  // Scroll to form
+  document.querySelector('.admin-form').scrollIntoView({ behavior: 'smooth' });
+}
+
+function confirmDelete(index) {
+  const products = loadProducts();
+  const name = products[index].name;
+  if (confirm(`Are you sure you want to delete "${name}"?`)) {
+    deleteProduct(index);
+    toast(`🗑️ "${name}" deleted successfully!`);
+    renderAdminProducts();
+    renderProducts();
+  }
+}
+
+function resetForm() {
+  document.getElementById('productName').value = '';
+  document.getElementById('productPrice').value = '';
+  document.getElementById('productWeight').value = '';
+  document.getElementById('productBadge').value = '';
+  document.getElementById('productDesc').value = '';
+  document.getElementById('productImage').value = '';
+  document.getElementById('editIndex').value = -1;
+  document.getElementById('formTitle').textContent = '➕ Add New Product';
+  removeImage();
+}
+
+// ==========================================
+// COMBO MANAGEMENT
+// ==========================================
+function loadComboForm() {
+  const combo = loadCombo();
+  document.getElementById('comboTitleInput').value = combo.title;
+  document.getElementById('comboNewPriceInput').value = combo.newPrice;
+  document.getElementById('comboOldPriceInput').value = combo.oldPrice;
+  document.getElementById('comboDescInput').value = combo.desc;
+}
+
+function saveCombo() {
+  const combo = loadCombo();
+  combo.title = document.getElementById('comboTitleInput').value.trim() || combo.title;
+  combo.newPrice = parseInt(document.getElementById('comboNewPriceInput').value) || combo.newPrice;
+  combo.oldPrice = parseInt(document.getElementById('comboOldPriceInput').value) || combo.oldPrice;
+  combo.desc = document.getElementById('comboDescInput').value.trim() || combo.desc;
+  
+  saveComboToStorage(combo);
+  renderCombo();
+  toast('✅ Combo offer updated!');
+}
+
+// ==========================================
+// TOAST
+// ==========================================
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('on');
+  setTimeout(() => t.classList.remove('on'), 3500);
+}
+
+// ==========================================
+// NAVIGATION
+// ==========================================
+const hbg = document.getElementById('hbg');
+const mob = document.getElementById('mob');
+hbg.addEventListener('click', () => mob.classList.toggle('open'));
+function cM() { mob.classList.remove('open'); }
+
+// Navbar scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('solid', scrollY > 20);
+  document.getElementById('btt').classList.toggle('on', scrollY > 400);
 });
 
 // Reveal on scroll
-const ro=new IntersectionObserver(es=>{
-  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');ro.unobserve(e.target)}})
-},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+const ro = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('on');
+      ro.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 
-// FAQ
-function tF(btn){
-  const fi=btn.parentElement,open=fi.classList.contains('open');
-  document.querySelectorAll('.fi.open').forEach(f=>f.classList.remove('open'));
-  if(!open)fi.classList.add('open');
+// FAQ toggle
+function tF(btn) {
+  const fi = btn.parentElement;
+  const open = fi.classList.contains('open');
+  document.querySelectorAll('.fi.open').forEach(f => f.classList.remove('open'));
+  if (!open) fi.classList.add('open');
 }
 
 // Notify
-function notify(btn){
-  if(btn.classList.contains('done'))return;
+function notify(btn) {
+  if (btn.classList.contains('done')) return;
   btn.classList.add('done');
-  btn.textContent='✓ You\'ll be notified!';
+  btn.textContent = '✓ You\'ll be notified!';
   toast('You\'re on the list! We\'ll notify you when it launches 🌿');
 }
 
-// Toast
-function toast(msg){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('on');
-  setTimeout(()=>t.classList.remove('on'),3500);
+// Admin trigger
+document.getElementById('adminTrigger').addEventListener('click', (e) => {
+  e.preventDefault();
+  openAdminLogin();
+});
+
+// Check URL hash
+if (window.location.hash === '#admin') {
+  openAdminLogin();
 }
+
+window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#admin') {
+    openAdminLogin();
+  }
+});
+
+// Close modals on overlay click
+document.getElementById('adminOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeAdmin();
+});
+
+document.getElementById('adminLoginOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeAdminLogin();
+});
+
+// ==========================================
+// INITIALIZE
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  renderProducts();
+  renderCombo();
+});
 </script>
 </body>
 </html>
