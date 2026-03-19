@@ -1,517 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Satellitekart - Best TV, Internet & Phone Bundle</title>
-    <meta name="description" content="Enjoy ultra-fast internet, HD TV, and reliable home phone service with Satellitekart. Get the best TV, Internet & Phone Bundle with free installation and 24/7 support across the UK.">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="HerbSutra – Pure Ayurvedic herbal products for hair and health. Amla, Reetha, Shikakai powders. 100% natural, chemical-free, freshly packed. Trusted by 1000+ customers."/>
+<meta name="keywords" content="amla powder, reetha powder, shikakai powder, ayurvedic hair care, herbal products, HerbSutra, natural hair care India"/>
+<meta property="og:title" content="HerbSutra – Pure Ayurvedic Hair & Health Care"/>
+<meta property="og:description" content="100% natural herbal powders for hair care. No chemicals. Freshly packed. Trusted by 1000+ customers."/>
+<title>HerbSutra 🌿 – Pure Ayurvedic Care for Hair & Health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#faf8f4;color:#1c1c1c;overflow-x:hidden;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{font-family:'Poppins',sans-serif;cursor:pointer}
 
-    <meta name="keywords" content="Cable TV,Satellite TV,High-Speed Internet,Broadband Internet,Satellite Internet,Bundle Deals">
-    <meta name="author" content="themexriver">
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+:root{
+--g1:#0d3320;--g2:#1a5c38;--g3:#2d8653;--g4:#52b788;--g5:#95d5b2;--g6:#d8f3dc;
+--amber:#c9943a;--amber2:#f0c060;
+--beige:#faf8f4;--beige2:#f2ede4;--beige3:#e5ddd0;
+--white:#fff;--dark:#1c1c1c;--mid:#4a4a4a;--light:#7a7a7a;
+--r:14px;--rl:22px;
+--s1:0 2px 12px rgba(13,51,32,.07);
+--s2:0 8px 32px rgba(13,51,32,.12);
+--s3:0 20px 60px rgba(13,51,32,.18);
+}
 
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/fontawesome-all.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/animate.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/flaticon.css">
-     <link rel="stylesheet" href="www.satellitekart.com/assets/css/flaticon_broadx.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/video.min.css">
-    <link rel="stylesheet" href="www.satellitekart.com/assets/css/style.css">
-    
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9Z5HD15QP"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-F9Z5HD15QP'); </script>
-    
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9Z5HD15QP"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-F9Z5HD15QP'); </script>
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#f0ede8}
+::-webkit-scrollbar-thumb{background:var(--g3);border-radius:3px}
+
+/* ── KEYFRAMES ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.reveal.on{opacity:1;transform:translateY(0)}
+
+/* ── NAVBAR ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .3s}
+#nav.solid{background:rgba(250,248,244,.96);backdrop-filter:blur(18px);box-shadow:0 2px 20px rgba(13,51,32,.09)}
+.nav-w{max-width:1200px;margin:0 auto;padding:0 24px;height:66px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--g1);display:flex;align-items:center;gap:6px}
+.logo-leaf{font-size:1.3rem}
+.logo span{color:var(--g3)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:.83rem;font-weight:500;color:var(--mid);letter-spacing:.02em;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1.5px;background:var(--g3);transform:scaleX(0);transition:transform .2s;transform-origin:left}
+.nav-links a:hover{color:var(--g2)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-btn{background:var(--g2);color:#fff;padding:9px 22px;border-radius:50px;font-size:.82rem;font-weight:600;border:none;transition:all .25s}
+.nav-btn:hover{background:var(--g1);transform:translateY(-1px);box-shadow:0 6px 20px rgba(13,51,32,.25)}
+.hbg{display:none;flex-direction:column;gap:5px;padding:4px;background:none;border:none}
+.hbg span{display:block;width:23px;height:2px;background:var(--g1);border-radius:2px;transition:all .3s}
+.mob-menu{display:none;flex-direction:column;gap:0;background:var(--beige);border-top:1px solid var(--beige3)}
+.mob-menu.open{display:flex}
+.mob-menu a{padding:14px 24px;font-size:.95rem;font-weight:500;color:var(--mid);border-bottom:1px solid var(--beige3);transition:background .2s}
+.mob-menu a:hover{background:var(--g6);color:var(--g2)}
+.mob-menu .mob-cta{color:var(--g3);font-weight:700}
+
+/* ── HERO ── */
+#hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1600&q=80') center/cover no-repeat;filter:brightness(.38) saturate(1.2)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,51,32,.92) 0%,rgba(26,92,56,.7) 50%,rgba(45,134,83,.4) 100%)}
+.hero-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hero-particles span{position:absolute;border-radius:50%;background:rgba(82,183,136,.15);animation:float 4s ease-in-out infinite}
+.hero-particles span:nth-child(1){width:300px;height:300px;top:-80px;right:-80px;animation-delay:0s}
+.hero-particles span:nth-child(2){width:180px;height:180px;bottom:10%;left:-40px;animation-delay:2s}
+.hero-particles span:nth-child(3){width:120px;height:120px;top:30%;right:15%;animation-delay:1s}
+.hero-c{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:120px 24px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(82,183,136,.18);border:1px solid rgba(82,183,136,.35);color:#95d5b2;padding:7px 18px;border-radius:50px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px;animation:fadeUp .8s ease both}
+.hero-pill::before{content:'✦';color:var(--amber2)}
+h1.hero-h{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:#fff;line-height:1.14;margin-bottom:18px;animation:fadeUp .9s .1s ease both}
+h1.hero-h em{color:#95d5b2;font-style:italic}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.7);max-width:430px;line-height:1.75;margin-bottom:34px;animation:fadeUp .9s .2s ease both}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp .9s .3s ease both}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;padding:14px 32px;border-radius:50px;font-size:.92rem;font-weight:700;border:none;transition:all .25s;letter-spacing:.02em;box-shadow:0 4px 20px rgba(201,148,58,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,148,58,.5)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);color:#fff;padding:13px 28px;border-radius:50px;font-size:.9rem;font-weight:500;border:1px solid rgba(255,255,255,.28);transition:all .25s}
+.btn-ghost:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.5)}
+.hero-trust{margin-top:44px;display:flex;gap:20px;flex-wrap:wrap;animation:fadeUp .9s .4s ease both}
+.ht-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);font-size:.8rem}
+.ht-check{width:20px;height:20px;border-radius:50%;background:rgba(82,183,136,.22);border:1px solid rgba(82,183,136,.4);display:flex;align-items:center;justify-content:center;font-size:.65rem;color:#95d5b2;flex-shrink:0}
+.hero-img-col{display:flex;align-items:center;justify-content:center;animation:fadeUp 1s .3s ease both}
+.hero-img-frame{position:relative;width:400px;height:460px}
+.hero-img-main{width:100%;height:100%;border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;object-fit:cover;border:3px solid rgba(82,183,136,.3);box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.hero-badge-float{position:absolute;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-radius:14px;padding:12px 16px;box-shadow:var(--s3);display:flex;align-items:center;gap:10px;animation:float 3s ease-in-out infinite}
+.hero-badge-float:nth-child(2){bottom:-20px;left:-20px;animation-delay:0s}
+.hero-badge-float:nth-child(3){top:30px;right:-30px;animation-delay:1.5s}
+.hbf-icon{font-size:1.4rem}
+.hbf-txt{font-size:.75rem;font-weight:700;color:var(--g1);line-height:1.3}
+.hbf-sub{font-size:.7rem;color:var(--light);font-weight:400}
+
+/* ── MARQUEE ── */
+#marquee{background:var(--g2);padding:14px 0;overflow:hidden}
+.marquee-track{display:flex;width:max-content;animation:marquee 20s linear infinite}
+.marquee-item{display:flex;align-items:center;gap:8px;padding:0 32px;color:rgba(255,255,255,.85);font-size:.82rem;font-weight:500;white-space:nowrap}
+.marquee-dot{color:var(--amber2);font-size:.9rem}
+
+/* ── SECTION COMMON ── */
+section{padding:88px 24px}
+.sw{max-width:1200px;margin:0 auto}
+.stag{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);display:block;margin-bottom:8px}
+.sh{font-family:'Playfair Display',serif;font-size:clamp(1.85rem,3.5vw,2.75rem);font-weight:700;color:var(--g1);line-height:1.2;margin-bottom:14px}
+.ss{color:var(--light);font-size:.95rem;max-width:500px;line-height:1.75}
+.shdr{margin-bottom:52px}
+.shdr.ctr{text-align:center}
+.shdr.ctr .ss{margin:0 auto}
+
+/* ── PRODUCTS ── */
+#products{background:var(--beige2)}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pc{background:var(--white);border-radius:var(--rl);overflow:hidden;box-shadow:var(--s1);transition:transform .3s,box-shadow .3s;position:relative}
+.pc:hover{transform:translateY(-7px);box-shadow:var(--s3)}
+.pc-img{height:230px;overflow:hidden;position:relative;background:var(--g6)}
+.pc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.pc:hover .pc-img img{transform:scale(1.07)}
+.pc-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,51,32,.12))}
+.nat-badge{position:absolute;top:14px;left:14px;z-index:2;background:var(--g2);color:#fff;font-size:.67rem;font-weight:700;letter-spacing:.05em;padding:5px 12px;border-radius:50px}
+.pc-body{padding:22px 22px 26px}
+.pc-name{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--g1);margin-bottom:7px}
+.pc-desc{font-size:.8rem;color:var(--light);line-height:1.65;margin-bottom:18px}
+.pc-price{display:flex;align-items:baseline;gap:8px;margin-bottom:18px}
+.pc-price-val{font-size:1.45rem;font-weight:700;color:var(--g3)}
+.pc-price-wt{font-size:.8rem;color:var(--light)}
+.btn-order{width:100%;padding:12px;border-radius:50px;background:linear-gradient(135deg,var(--g2),var(--g3));color:#fff;font-size:.85rem;font-weight:600;border:none;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:7px}
+.btn-order:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(29,92,56,.3)}
+
+/* ── COMBO ── */
+.combo-wrap{margin-top:26px;background:linear-gradient(135deg,var(--g1) 0%,#1e5c36 50%,#2d6e45 100%);border-radius:var(--rl);overflow:hidden;box-shadow:var(--s3);display:grid;grid-template-columns:1fr 1fr;transition:transform .3s;position:relative}
+.combo-wrap:hover{transform:translateY(-5px)}
+.combo-lim{position:absolute;top:20px;right:20px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:7px 16px;border-radius:50px;animation:pulse 2.5s ease-in-out infinite;z-index:2}
+.combo-img-side{position:relative;overflow:hidden;min-height:280px}
+.combo-img-side img{width:100%;height:100%;object-fit:cover;opacity:.75;transition:transform .5s}
+.combo-wrap:hover .combo-img-side img{transform:scale(1.05)}
+.combo-img-side::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(13,51,32,.8))}
+.combo-body{padding:40px 38px;display:flex;flex-direction:column;justify-content:center}
+.combo-tag{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g5);margin-bottom:10px}
+.combo-ttl{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:#fff;margin-bottom:14px;line-height:1.2}
+.combo-inc{font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:24px}
+.combo-inc span{color:var(--g5);font-weight:500}
+.combo-prices{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.combo-old{font-size:1rem;color:rgba(255,255,255,.4);text-decoration:line-through}
+.combo-new{font-size:2rem;font-weight:700;color:var(--amber2)}
+.combo-save{background:rgba(201,148,58,.18);color:var(--amber2);border:1px solid rgba(201,148,58,.3);font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:50px}
+.btn-combo{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;padding:14px 36px;border-radius:50px;font-size:.9rem;font-weight:700;border:none;transition:all .25s;cursor:pointer}
+.btn-combo:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,148,58,.45)}
+
+/* ── UPCOMING ── */
+#upcoming{background:var(--beige)}
+.ug{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.uc{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--beige3);transition:all .3s;position:relative}
+.uc:hover{transform:translateY(-5px);box-shadow:var(--s2)}
+.uc-img{height:180px;overflow:hidden;position:relative}
+.uc-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.4) brightness(.9);transition:all .4s}
+.uc:hover .uc-img img{filter:saturate(.6) brightness(1)}
+.uc-img::after{content:'';position:absolute;inset:0;background:rgba(13,51,32,.35)}
+.cs-badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;background:rgba(250,248,244,.92);backdrop-filter:blur(8px);color:var(--g2);font-size:.72rem;font-weight:700;letter-spacing:.07em;padding:7px 16px;border-radius:50px;white-space:nowrap}
+.uc-body{padding:18px 18px 22px;text-align:center}
+.uc-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--g1);margin-bottom:6px}
+.uc-hint{font-size:.78rem;color:var(--light);margin-bottom:16px;line-height:1.6}
+.btn-notify{width:100%;padding:10px;border-radius:50px;background:transparent;color:var(--g2);font-size:.8rem;font-weight:600;border:2px solid var(--g5);transition:all .25s}
+.btn-notify:hover,.btn-notify.done{background:var(--g6);border-color:var(--g4);color:var(--g2)}
+
+/* ── WHY ── */
+#why{background:linear-gradient(160deg,var(--g1) 0%,#1e5c36 100%)}
+#why .sh{color:#fff}
+#why .stag{color:var(--g5)}
+#why .ss{color:rgba(255,255,255,.6)}
+.wg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:4px}
+.wc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:30px 26px;transition:all .3s;backdrop-filter:blur(6px)}
+.wc:hover{background:rgba(255,255,255,.11);transform:translateY(-4px)}
+.wc-icon{width:54px;height:54px;border-radius:14px;background:rgba(82,183,136,.18);border:1px solid rgba(82,183,136,.28);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+.wc-t{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:9px}
+.wc-d{font-size:.82rem;color:rgba(255,255,255,.58);line-height:1.7}
+
+/* ── ABOUT ── */
+#about{background:var(--beige2)}
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-imgs{position:relative;height:480px}
+.about-img-main{width:80%;height:380px;border-radius:24px;object-fit:cover;box-shadow:var(--s3)}
+.about-img-sm{position:absolute;width:55%;height:220px;border-radius:18px;object-fit:cover;bottom:0;right:0;border:5px solid var(--beige2);box-shadow:var(--s2)}
+.about-pill{display:inline-flex;align-items:center;gap:7px;background:var(--g6);color:var(--g2);font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:7px 16px;border-radius:50px;margin-bottom:18px}
+.about-q{margin-top:26px;padding:18px 22px;background:var(--g6);border-left:3px solid var(--g3);border-radius:0 12px 12px 0;font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--g1);line-height:1.7}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.stat-box{background:var(--white);border-radius:14px;padding:18px 16px;text-align:center;border:1px solid var(--beige3)}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--g3)}
+.stat-l{font-size:.75rem;color:var(--light);margin-top:3px}
+
+/* ── TESTIMONIALS ── */
+#testi{background:var(--beige)}
+.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.tc{background:var(--white);border-radius:var(--r);padding:26px;border:1px solid var(--beige3);box-shadow:var(--s1);transition:all .3s;position:relative;overflow:hidden}
+.tc::before{content:'❝';position:absolute;top:-8px;right:16px;font-size:5rem;color:var(--g6);font-family:serif;line-height:1}
+.tc:hover{transform:translateY(-4px);box-shadow:var(--s2)}
+.tc-stars{color:var(--amber);font-size:.95rem;letter-spacing:2px;margin-bottom:12px}
+.tc-txt{font-size:.83rem;color:var(--mid);line-height:1.75;margin-bottom:20px;font-style:italic;position:relative;z-index:1}
+.tc-auth{display:flex;align-items:center;gap:12px}
+.tc-av{width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.tc-nm{font-size:.85rem;font-weight:600;color:var(--g1)}
+.tc-loc{font-size:.74rem;color:var(--light)}
+.tc-ver{font-size:.68rem;color:var(--g3);margin-top:3px}
+
+/* ── FAQ ── */
+#faq{background:var(--beige2)}
+.faq-l{max-width:740px;margin:0 auto}
+.fi{background:var(--white);border-radius:var(--r);margin-bottom:12px;border:1px solid var(--beige3);overflow:hidden;transition:box-shadow .3s}
+.fi:hover{box-shadow:var(--s1)}
+.fq{width:100%;display:flex;align-items:center;justify-content:space-between;padding:19px 24px;background:none;border:none;cursor:pointer;font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:600;color:var(--g1);text-align:left;gap:16px}
+.fa-arr{width:28px;height:28px;border-radius:50%;background:var(--g6);color:var(--g2);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;transition:all .3s}
+.fi.open .fa-arr{transform:rotate(180deg);background:var(--g2);color:#fff}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 24px;font-size:.84rem;color:var(--light);line-height:1.78}
+.fi.open .fa{max-height:220px;padding-bottom:20px}
+
+/* ── CONTACT ── */
+#contact{background:var(--beige)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.ci{display:flex;align-items:center;gap:16px;padding:18px 22px;background:var(--white);border-radius:var(--r);border:1px solid var(--beige3);margin-bottom:14px;transition:all .3s}
+.ci:hover{box-shadow:var(--s1);transform:translateX(4px)}
+.ci-ic{width:46px;height:46px;border-radius:12px;background:var(--g6);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+.ci-lbl{font-size:.72rem;color:var(--light);margin-bottom:3px}
+.ci-val{font-weight:600;color:var(--g1);font-size:.9rem}
+.social-row{display:flex;gap:12px;margin-top:8px}
+.btn-ig{display:flex;align-items:center;gap:8px;padding:12px 22px;border-radius:50px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;font-size:.83rem;font-weight:600;border:none;transition:all .25s;cursor:pointer}
+.btn-yt{display:flex;align-items:center;gap:8px;padding:12px 22px;border-radius:50px;background:#ff0000;color:#fff;font-size:.83rem;font-weight:600;border:none;transition:all .25s;cursor:pointer}
+.btn-ig:hover,.btn-yt:hover{transform:translateY(-2px);box-shadow:var(--s2)}
+.contact-card{background:linear-gradient(135deg,var(--g1),#1e5c36);border-radius:22px;padding:40px;color:#fff;height:100%;min-height:320px;display:flex;flex-direction:column;justify-content:space-between}
+.cc-ttl{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:14px}
+.cc-sub{font-size:.85rem;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:28px}
+.cc-form-note{font-size:.8rem;color:var(--g5)}
+.btn-form{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--amber),#e8a820);color:#fff;padding:13px 28px;border-radius:50px;font-size:.88rem;font-weight:700;border:none;cursor:pointer;transition:all .25s;margin-top:20px}
+.btn-form:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,148,58,.4)}
+
+/* ── FOOTER ── */
+footer{background:var(--g1);padding:64px 24px 24px}
+.fw{max-width:1200px;margin:0 auto}
+.ft{display:grid;grid-template-columns:2.2fr 1fr 1fr;gap:52px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:32px}
+.fl-name{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;color:#fff;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.fl-desc{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.75;max-width:280px;margin-bottom:20px}
+.fl-badges{display:flex;gap:10px;flex-wrap:wrap}
+.fl-badge{background:rgba(82,183,136,.15);border:1px solid rgba(82,183,136,.25);color:var(--g5);font-size:.7rem;font-weight:600;padding:5px 12px;border-radius:50px}
+.fc-ttl{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g5);margin-bottom:18px}
+.fc-links{display:flex;flex-direction:column;gap:10px}
+.fc-links a{font-size:.83rem;color:rgba(255,255,255,.5);transition:color .2s}
+.fc-links a:hover{color:var(--g5)}
+.fb{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fb-copy{font-size:.78rem;color:rgba(255,255,255,.3)}
+.fb-love{font-size:.78rem;color:rgba(255,255,255,.3)}
+.fb-love span{color:var(--g5)}
+
+/* ── TOAST & BACK-TO-TOP ── */
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--g1);color:#fff;padding:12px 26px;border-radius:50px;font-size:.84rem;opacity:0;pointer-events:none;z-index:9999;transition:all .3s;box-shadow:var(--s3);white-space:nowrap}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#btt{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:50%;background:var(--g2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:pointer;border:none;box-shadow:var(--s2);opacity:0;pointer-events:none;transition:all .3s;z-index:888}
+#btt.on{opacity:1;pointer-events:all}
+#btt:hover{background:var(--g1);transform:translateY(-2px)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-c{grid-template-columns:1fr;text-align:center}
+  .hero-sub{margin:0 auto 34px}
+  .hero-btns{justify-content:center}
+  .hero-trust{justify-content:center}
+  .hero-img-col{display:none}
+  .pg{grid-template-columns:repeat(2,1fr)}
+  .ug{grid-template-columns:repeat(2,1fr)}
+  .wg{grid-template-columns:repeat(2,1fr)}
+  .tg{grid-template-columns:repeat(2,1fr)}
+  .about-g{grid-template-columns:1fr;gap:40px}
+  .about-imgs{height:280px}
+  .about-img-main{width:70%;height:260px}
+  .about-img-sm{width:50%;height:180px}
+  .combo-wrap{grid-template-columns:1fr}
+  .combo-img-side{min-height:200px}
+  .ft{grid-template-columns:1fr 1fr;gap:36px}
+  .cg{grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:768px){
+  section{padding:64px 20px}
+  .nav-links{display:none}
+  .hbg{display:flex}
+  .pg{grid-template-columns:1fr}
+  .ug{grid-template-columns:1fr 1fr}
+  .wg{grid-template-columns:1fr}
+  .tg{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(3,1fr)}
+  .ft{grid-template-columns:1fr;gap:28px}
+  .fb{flex-direction:column;text-align:center}
+  .combo-body{padding:28px 24px}
+  .social-row{flex-direction:column}
+}
+@media(max-width:480px){
+  .ug{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .hero-h{font-size:2rem}
+  .combo-ttl{font-size:1.5rem}
+}
+</style>
 </head>
+<body>
 
-<body class="home-4">
-    <!--<div id="preloader"></div>-->
-    <div class="up">
-        <a href="index.html#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+<!-- NAVBAR -->
+<header id="nav">
+  <div class="nav-w">
+    <a href="#hero" class="logo"><span class="logo-leaf">🌿</span>Herb<span>Sutra</span></a>
+    <nav class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#testi">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="nav-btn">Order Now</a>
+    </nav>
+    <button class="hbg" id="hbg" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mob-menu" id="mob">
+    <a href="#products" onclick="cM()">Products</a>
+    <a href="#why" onclick="cM()">Why Us</a>
+    <a href="#about" onclick="cM()">About</a>
+    <a href="#testi" onclick="cM()">Reviews</a>
+    <a href="#faq" onclick="cM()">FAQ</a>
+    <a href="#contact" onclick="cM()">Contact</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="mob-cta" onclick="cM()">🛒 Order Now →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles"><span></span><span></span><span></span></div>
+  <div class="hero-c">
+    <div class="hero-text">
+      <div class="hero-pill">Trusted by 1000+ Customers Across India</div>
+      <h1 class="hero-h">Pure Ayurvedic Care<br/>for Your <em>Hair & Health</em></h1>
+      <p class="hero-sub">Handpicked from nature's finest herbs — no chemicals, no shortcuts. Just pure, freshly packed Ayurvedic goodness for radiant hair and vibrant health.</p>
+      <div class="hero-btns">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-gold">🛒 Shop Now</a>
+        <a href="#about" class="btn-ghost">Learn Our Story</a>
+      </div>
+      <div class="hero-trust">
+        <div class="ht-item"><div class="ht-check">✓</div>100% Natural</div>
+        <div class="ht-item"><div class="ht-check">✓</div>No Chemicals</div>
+        <div class="ht-item"><div class="ht-check">✓</div>Freshly Packed</div>
+        <div class="ht-item"><div class="ht-check">✓</div>Pan-India Delivery</div>
+      </div>
     </div>
-    <!-- Start of header section
-	============================================= -->
-    <header id="header-id" class="main-header third_header">
-        <div class="header-top clearfix">
-            <div class="header_contact clearfix ul-li">
-                <ul>
-                      <li><i class="fas fa-phone"></i> <span><a href="tel:(888) 216-2817">(888) 216-2817</a></span></li>
-                     
-                </ul>
-            </div>
-            <div class="header-top_right float-right">
-                <div class="header_contact clearfix ul-li">
-                <ul>
-                     
-                  
-                    <li><i class="far fa-envelope"></i> <span> <a href="mailto: support@satellitekart.com"> support@satellitekart.com</a></span></li>
-                </ul>
-            </div>
-            </div>
+    <div class="hero-img-col">
+      <div class="hero-img-frame">
+        <img class="hero-img-main" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700&q=80" alt="Ayurvedic herbs and powders" loading="eager"/>
+        <div class="hero-badge-float">
+          <span class="hbf-icon">🌿</span>
+          <div><div class="hbf-txt">100% Natural</div><div class="hbf-sub">No preservatives</div></div>
         </div>
-        <div class="main-menu-header clearfix relative-position">
-           <div class="brand-logo float-left">
-  <a href="index.html#">
-    <img src="www.satellitekart.com/assets/img/logo/logo-3.png" alt="logo">
-    SATELLITE <br>KART
-  </a>
+        <div class="hero-badge-float">
+          <span class="hbf-icon">⭐</span>
+          <div><div class="hbf-txt">1000+ Happy Customers</div><div class="hbf-sub">4.9 average rating</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div id="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="marquee-dot">✦</span> 100% Natural Ingredients</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Chemical Free Formula</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Trusted Ayurvedic Brand</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Freshly Packed Each Order</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Fast Pan-India Delivery</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> 1000+ Happy Customers</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Eco-Friendly Packaging</div>
+    <!-- duplicate for seamless loop -->
+    <div class="marquee-item"><span class="marquee-dot">✦</span> 100% Natural Ingredients</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Chemical Free Formula</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Trusted Ayurvedic Brand</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Freshly Packed Each Order</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Fast Pan-India Delivery</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> 1000+ Happy Customers</div>
+    <div class="marquee-item"><span class="marquee-dot">✦</span> Eco-Friendly Packaging</div>
+  </div>
 </div>
 
-            <div class="q-btn_1 float-right text-center">
-                <a class="block-display " href="tel:(888) 216-2817"> <i class="fas fa-phone"></i> (888) 216-2817</a>
-            </div>
-            <nav class="main-navigation float-right nav-menu-1 clearfix ul-li">
-                <ul id="main-nav" class="nav navbar-nav clearfix">
-                    <li>
-                        <a href="index.html#">Home</a>
-                    </li>
-                    <li><a href="index.html#about">About</a></li>
-                   
-                    <li>
-                        <a href="index.html#service">service</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="mobile_menu">
-            <div class="mobile_menu_wrap">
-                <i class="open_bar menu_trigger  fas fa-list-ul"></i>
-                <div class="wide_sidebar">
-                    <div class="side_bar_overlay open_bar"></div>
-                    <div class="wide_sidebar_content pera-content headline">
-                        <div class="w-brand-logo">
-                            <a href="https://www.satellitekart.com/!#">< src="www.satellitekart.com/assets//logo/logo-3.png" alt="logo"> SATELLITE <br> KART</a> 
-                        </div>
-                        
-                        <div class="pages-list">
-                            <ul class="list-unstyled components">
-                               <li>
-                                    <a href="index.html#">Home</a>
-                                </li>
-                                <li><a href="index.html#about">About</a></li>
-                            
-                                <li>
-                                    <a href="index.html#service">service</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="page_headline">Contact Info:</p>
-                        <div class="mobile_menu_contact ul-li-block">
-                            <ul>
-                                <li><i class="far fa-envelope"></i> <span> <a href="mailto: support@satellitekart.com"> support@satellitekart.com</a></span></li>
-                                <li><i class="fas fa-phone"></i> <span><a href="tel:(888) 216-2817">(888) 216-2817</a></span></li>
-                            </ul>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="sw">
+    <header class="shdr reveal">
+      <span class="stag">Our Products</span>
+      <h2 class="sh">Pure Herbal Powders, Straight from Nature</h2>
+      <p class="ss">Sourced with care, sun-dried naturally, and packed fresh — every batch made to preserve maximum potency and purity.</p>
     </header>
-    <!-- ENd of header section
-	============================================= -->
+    <div class="pg">
 
-   <!-- Start of slider section
-	============================================= -->
-<!-- Start of slider section
-============================================= -->
-<section id="slider" class="slider-section">
-    <div id="slide_wrapper" class="slide-area-content">
-
-       
-
-        <!-- Slide 2: Satellite Internet -->
-        <div class="slider-layer">
-            <div class="slider-img" data-background="www.satellitekart.com/assets/img/slider/s3.jpg"></div>
-            <div class="container">
-                <div class="slider-text">
-                    <div class="slider_text-box slider_wrap1 text-center headline pera-content">
-                        <div class="content-area">
-                            <p>Unlimited Connectivity, Anywhere</p>
-                            <h1>High-Speed <span>Satellite Internet</span> for Every Location</h1>
-                            <p>Stay connected even in the most remote areas with fast, stable Satellite Internet from Satellitekart.</p>
-                            <div class="q-btn_1 d-inline-block text-center mt-5">
-                                <a class="block-display " href="tel:(888) 216-2817"> <i class="fas fa-phone"></i> (888) 216-2817</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Amla -->
+      <article class="pc reveal">
+        <div class="pc-img">
+          <span class="nat-badge">100% Natural</span>
+          <img src="https://images.unsplash.com/photo-1609501676725-7186f017a4b7?w=600&q=80" alt="Amla powder in a wooden bowl with fresh amla berries" loading="lazy"/>
         </div>
-
-         <!-- Slide 1: Satellite TV -->
-        <div class="slider-layer">
-            <div class="slider-img" data-background="www.satellitekart.com/assets/img/slider/s3.jpg"></div>
-            <div class="container">
-                <div class="slider-text">
-                    <div class="slider_text-box slider_wrap1 text-center headline pera-content">
-                        <div class="content-area">
-                            <p>Crystal-Clear Entertainment</p>
-                            <h1>Experience Premium <span>Satellite TV</span> with 4K Quality</h1>
-                            <p>Watch your favorite channels, movies, and sports with unbeatable clarity and reliability — powered by Satellitekart.</p>
-                            <div class="q-btn_1 d-inline-block text-center mt-5">
-                                <a class="block-display " href="tel:(888) 216-2817"> <i class="fas fa-phone"></i> (888) 216-2817</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Amla Powder</h3>
+          <p class="pc-desc">The richest natural source of Vitamin C. Strengthens hair roots, reduces grey hair, prevents hair fall, and promotes thick, lustrous growth.</p>
+          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
         </div>
+      </article>
+
+      <!-- Reetha -->
+      <article class="pc reveal">
+        <div class="pc-img">
+          <span class="nat-badge">SLS Free</span>
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&q=80" alt="Reetha soapnut powder — natural herbal cleanser" loading="lazy"/>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Reetha Powder</h3>
+          <p class="pc-desc">Nature's own shampoo. Gently cleanses scalp, fights dandruff, adds natural shine and volume without stripping moisture or causing irritation.</p>
+          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
+        </div>
+      </article>
+
+      <!-- Shikakai -->
+      <article class="pc reveal">
+        <div class="pc-img">
+          <span class="nat-badge">Ayurvedic</span>
+          <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=600&q=80" alt="Shikakai powder — herbal hair conditioner" loading="lazy"/>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Shikakai Powder</h3>
+          <p class="pc-desc">The "fruit for hair" in Ayurveda. Conditions, detangles and softens hair naturally, maintains scalp pH and promotes healthy hair growth.</p>
+          <div class="pc-price"><span class="pc-price-val">₹299</span><span class="pc-price-wt">/ 250g</span></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-order">🛒 Order Now</a>
+        </div>
+      </article>
 
     </div>
-</section>
-<!-- End of slider section
-============================================= -->
 
-<!-- End of slider section
-	============================================= -->
-
-   <!-- Start of About Us section
-============================================= -->
-<section id="about" class="about_section4">
-    <div class="container">
-        <div class="about_content4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <p>
-                            At <strong>Satellitekart</strong>, we bring the world closer to you through cutting-edge <strong>Satellite TV</strong> and <strong>Satellite Internet</strong> services. 
-                            Enjoy premium entertainment, lightning-fast connectivity, and 24/7 reliability — no matter where you are.
-                            From homes to remote business locations, our technology ensures you stay connected, informed, and entertained.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="section-title-area section-left-title">
-                        <div class="section-title headline relative-position">
-                            <div class="title-head pera-content">
-                                <h2>Connecting Homes & Businesses with Satellite Excellence</h2>
-                                <p>About Satellitekart</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- COMBO -->
+    <div class="combo-wrap reveal">
+      <span class="combo-lim">🔥 Limited Offer</span>
+      <div class="combo-img-side">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Natural herbal hair care combo pack" loading="lazy"/>
+      </div>
+      <div class="combo-body">
+        <div class="combo-tag">✦ Best Value Bundle — Save Big</div>
+        <h3 class="combo-ttl">Hair Care Combo Offer</h3>
+        <p class="combo-inc">
+          <span>Amla Powder 500g</span> + <span>Reetha Powder 500g</span> + <span>Shikakai Powder 500g</span><br/>
+          Complete Ayurvedic hair care in one power-packed combo — wash, treat, and nourish naturally.
+        </p>
+        <div class="combo-prices">
+          <span class="combo-old">₹897</span>
+          <span class="combo-new">₹599</span>
+          <span class="combo-save">You Save ₹298</span>
         </div>
-
-        <div class="statistics_video">
-            <div class="videoimg relative-position">
-                <img src="www.satellitekart.com/assets/img/feature/vch.jpg" alt="Satellitekart - About Us">
-            </div>
-        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-combo">🛒 Grab This Combo</a>
+      </div>
     </div>
+  </div>
 </section>
-<!-- End of About Us section
-============================================= -->
 
-
- <!-- Start of Service section
-============================================= -->
-<section id="service" class="service-section">
-	<div class="section-title-area">
-		<div class="section-title headline relative-position text-center">
-			<div class="title-head pera-content">
-				<h2>Our Services</h2>
-				<p>Discover the Best TV, Internet & Bundle Offers</p>
-			</div>
-		</div>
-	</div>
-	<!-- /section-title -->
-	<div class="container">
-		<div class="row">
-			<!-- Cable TV -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-tv"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>Cable TV</h3>
-						<p>Experience 100+ popular channels, HD quality, and non-stop entertainment for your family.</p>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- Satellite TV -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-satelite"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>Satellite TV</h3>
-						<p>Enjoy crystal-clear Satellite TV with premium channels, 4K clarity, and a wide variety of content.</p>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- High-Speed Internet -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-internet"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>High-Speed Internet</h3>
-						<p>Get fast, reliable connectivity for streaming, gaming, and working from home — without interruptions.</p>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- Broadband Internet -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-wifi"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>Broadband Internet</h3>
-						<p>Stay connected with our super-fast broadband network designed for homes and businesses alike.</p>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- Satellite Internet -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-satelite-1"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>Satellite Internet</h3>
-						<p>Access the internet from anywhere — even in remote areas — with our Satellite Internet service.</p>
-						
-					</div>
-				</div>
-			</div>
-
-			<!-- Bundle Deals -->
-			<div class="col-md-4 colmd4">
-				<div class="service-icon-text relative-position text-center">
-					<div class="service-icon">
-						<span><i class="flaticon-wifi-router"></i></span>
-					</div>
-					<div class="service-text headline pera-content">
-						<h3>Bundle Deals</h3>
-						<p>Save more with exclusive bundle plans that combine TV, Internet, and more in one great package.</p>
-						
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+<!-- UPCOMING -->
+<section id="upcoming">
+  <div class="sw">
+    <header class="shdr ctr reveal">
+      <span class="stag">Coming Soon</span>
+      <h2 class="sh">More Herbs. More Goodness.</h2>
+      <p class="ss">We're expanding our range with more powerful Ayurvedic superherbs. Be the first to know when they launch.</p>
+    </header>
+    <div class="ug">
+      <div class="uc reveal">
+        <div class="uc-img">
+          <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=500&q=80" alt="Gond Katira — natural cooling herb" loading="lazy"/>
+          <span class="cs-badge">Coming Soon</span>
+        </div>
+        <div class="uc-body">
+          <div class="uc-name">Gond Katira</div>
+          <p class="uc-hint">Natural cooling agent for summer heat, digestive strength, and stamina boost.</p>
+          <button class="btn-notify" onclick="notify(this)">🔔 Notify Me</button>
+        </div>
+      </div>
+      <div class="uc reveal">
+        <div class="uc-img">
+          <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=500&q=80" alt="Chia seeds — omega-3 superfood" loading="lazy"/>
+          <span class="cs-badge">Coming Soon</span>
+        </div>
+        <div class="uc-body">
+          <div class="uc-name">Chia Seeds</div>
+          <p class="uc-hint">Omega-3 rich superfood for energy, radiant skin, weight balance and overall wellness.</p>
+          <button class="btn-notify" onclick="notify(this)">🔔 Notify Me</button>
+        </div>
+      </div>
+      <div class="uc reveal">
+        <div class="uc-img">
+          <img src="https://images.unsplash.com/photo-1618677366787-9727aacca7ea?w=500&q=80" alt="Tulsi leaves — sacred immunity herb" loading="lazy"/>
+          <span class="cs-badge">Coming Soon</span>
+        </div>
+        <div class="uc-body">
+          <div class="uc-name">Tulsi Powder</div>
+          <p class="uc-hint">Sacred immunity booster — fights infections, reduces stress and supports respiratory health.</p>
+          <button class="btn-notify" onclick="notify(this)">🔔 Notify Me</button>
+        </div>
+      </div>
+      <div class="uc reveal">
+        <div class="uc-img">
+          <img src="https://images.unsplash.com/photo-1603118675111-652b3c3c4b46?w=500&q=80" alt="Shatavari — Ayurvedic adaptogen" loading="lazy"/>
+          <span class="cs-badge">Coming Soon</span>
+        </div>
+        <div class="uc-body">
+          <div class="uc-name">Shatavari</div>
+          <p class="uc-hint">Ayurvedic adaptogen for hormonal balance, energy, vitality and women's wellness.</p>
+          <button class="btn-notify" onclick="notify(this)">🔔 Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-            <!-- End of Service section
-            ============================================= -->
-            <div class="contact_page_form p-60">
-				<div class="get-quote-section">
-					<div class="container">
-						<div class="section-title-area">
-							<div class="section-title headline relative-position text-center">
-							 
-								<div class="title-head pera-content">
-									<h2>Get In Touch</h2>
-									<p>Write here</p>
-								</div>
-							</div>
-						</div>
-						<!-- /section title -->
-						<div class="quote_content">
-							<div class="quote_form">
-								<form action="https://formspree.io/f/xreqkdjp" id="contact_form" method="POST">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="contact-info">
-                                                <label>Enter your name</label>
-                                                <input class="email" name="name" type="text" placeholder="Enter Name here.....">
-                                                <div class="icon-bg"><i class="far fa-user"></i></div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="col-md-6">
-                                            <div class="contact-info">
-                                                <label>Enter your email</label>
-                                                <input class="name" name="email" type="email" placeholder="Enter email here......">
-                                                <div class="icon-bg"><i class="far fa-envelope"></i></div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="col-md-6">
-                                            <div class="contact-info">
-                                                <label>Enter your phone number</label>
-                                                <input class="phone" name="phone" type="text" placeholder="Enter phone number here......">
-                                                <div class="icon-bg"><i class="fas fa-phone"></i></div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="col-md-6">
-                                            <div class="contact-info">
-                                                <label>Enter your address</label>
-                                                <input class="address" name="address" type="text" placeholder="Enter address here......">
-                                                <div class="icon-bg"><i class="fas fa-map-marker-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="contact-info">
-                                        <label>Enter your message</label>
-                                        <textarea id="message" name="message" placeholder="Enter message here......"></textarea>
-                                        <div class="icon-bg"><i class="far fa-edit"></i></div>
-                                    </div>
-                                
-                                    <div id="alert-msg"></div>
-                                
-                                    <div class="sub-button text-center text-capitalize">
-                                        <button class="hover-btn" type="submit">Get A Quote</button>
-                                    </div>
-                                </form>
 
-							</div>
-						</div>
-						<!-- /qoute form -->
+<!-- WHY -->
+<section id="why">
+  <div class="sw">
+    <header class="shdr ctr reveal">
+      <span class="stag">Why HerbSutra</span>
+      <h2 class="sh">The HerbSutra Promise</h2>
+      <p class="ss">We believe in transparency, purity, and the timeless wisdom of Ayurveda — no compromises.</p>
+    </header>
+    <div class="wg">
+      <div class="wc reveal">
+        <div class="wc-icon">🌿</div>
+        <div class="wc-t">100% Natural Ingredients</div>
+        <p class="wc-d">Every ingredient is sourced directly from trusted farms. No fillers, no adulteration — pure herbs exactly as nature intended.</p>
+      </div>
+      <div class="wc reveal">
+        <div class="wc-icon">🚫</div>
+        <div class="wc-t">Zero Chemicals</div>
+        <p class="wc-d">No parabens, sulfates, artificial colours or preservatives. Safe for all hair types including sensitive scalps and chemically treated hair.</p>
+      </div>
+      <div class="wc reveal">
+        <div class="wc-icon">📜</div>
+        <div class="wc-t">Ayurvedic Formula</div>
+        <p class="wc-d">Rooted in centuries of Ayurvedic wisdom. Our formulations are designed to work with your body's natural balance, not against it.</p>
+      </div>
+      <div class="wc reveal">
+        <div class="wc-icon">📦</div>
+        <div class="wc-t">Freshly Packed</div>
+        <p class="wc-d">Small-batch packing ensures every order reaches you at peak freshness and full potency — never sitting on a shelf for months.</p>
+      </div>
+      <div class="wc reveal">
+        <div class="wc-icon">🌱</div>
+        <div class="wc-t">Eco-Friendly Packaging</div>
+        <p class="wc-d">Minimal, recyclable packaging because we care about the planet as much as we care about your hair and health.</p>
+      </div>
+      <div class="wc reveal">
+        <div class="wc-icon">⭐</div>
+        <div class="wc-t">1000+ Happy Customers</div>
+        <p class="wc-d">A growing community of health-conscious Indians who trust HerbSutra for genuine, result-oriented Ayurvedic wellness.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                   </div>
-				</div>
-			</div>     
-
-  
-   	<!-- Start of footer section
-		============================================= -->
-		<footer id="contact" class="footer-section p-0">
-			<div class="container">
-				 
-				<div class="footer-widget-wrap">
-  <div class="row justify-content-center">
-    <div class="col-sm-10">
-      <div class="row align-items-center justify-content-center">
-        
-        <div class="col-md-4 col-sm-6">
-          <div class="site-widget headline pera-content">
-            <div class="newslatter-logo mb-3">
-              <a href="index.html#"><img src="www.satellitekart.com/assets/img/logo/logo-3.png" width="180" alt="logo">    SATELLITE <br> KART</a>
-            </div>
-            <p>Satellitekart brings you ultra-fast internet, HD TV, and secure connections — all in one place.</p>
-          </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="sw">
+    <div class="about-g">
+      <div class="about-imgs reveal">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=700&q=80" alt="Natural Ayurvedic herbs and spices arrangement" loading="lazy"/>
+        <img class="about-img-sm" src="https://images.unsplash.com/photo-1563906267088-b029e7101114?w=500&q=80" alt="Fresh herbal ingredients for hair care" loading="lazy"/>
+      </div>
+      <div class="about-body reveal">
+        <div class="about-pill">🌿 Our Story</div>
+        <span class="stag">About HerbSutra</span>
+        <h2 class="sh">Rooted in Nature,<br/>Backed by Ayurveda</h2>
+        <p class="ss">HerbSutra is a natural herbal brand providing pure Ayurvedic products for hair and health. Born from a deep belief in traditional Indian herbal wisdom, we bridge the gap between ancient remedies and modern lifestyles.</p>
+        <p class="ss" style="margin-top:14px">We work directly with farmers and trusted suppliers — no middlemen, no shortcuts. Every herb is harvested at its peak, sun-dried naturally, and packed with care to preserve maximum goodness.</p>
+        <blockquote class="about-q">"True wellness comes from nature. We're just here to make it accessible for every Indian household."</blockquote>
+        <div class="stats-row">
+          <div class="stat-box"><div class="stat-n">1000+</div><div class="stat-l">Happy Customers</div></div>
+          <div class="stat-box"><div class="stat-n">3+</div><div class="stat-l">Herbal Products</div></div>
+          <div class="stat-box"><div class="stat-n">100%</div><div class="stat-l">Pure & Natural</div></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="site-widget headline footer-menu-widget pera-content">
-            <div class="opening-time">
-              <div class="opening-time-icon float-left">
-                <span class="flaticon-email"></span>
-              </div>
-              <h3 class="widget-title">Email Us</h3>
-              <div class="time-schedule">
-                <span><a href="mailto:support@satellitekart.com">support@satellitekart.com</a></span>
-              </div>
-            </div>
-          </div>
+<!-- TESTIMONIALS -->
+<section id="testi">
+  <div class="sw">
+    <header class="shdr ctr reveal">
+      <span class="stag">Customer Reviews</span>
+      <h2 class="sh">Real People. Real Results.</h2>
+      <p class="ss">Over 1000 happy customers across India. Here's what some of them have to say.</p>
+    </header>
+    <div class="tg">
+      <article class="tc reveal">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-txt">"Maine pehle kaafi products try kiye but HerbSutra ka Amla Powder sachchi kaam karta hai! 6 hafton mein mera hair fall kaafi kam ho gaya aur baal chamakdaar ho gaye. Bilkul genuine product hai!"</p>
+        <div class="tc-auth">
+          <img class="tc-av" src="https://i.pravatar.cc/80?img=47" alt="Priya Sharma" loading="lazy"/>
+          <div><div class="tc-nm">Priya Sharma</div><div class="tc-loc">Lucknow, UP</div><div class="tc-ver">✓ Verified Purchase</div></div>
         </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="site-widget headline footer-menu-widget pera-content">
-            <div class="opening-time">
-              <div class="opening-time-icon float-left">
-                <span class="flaticon-call"></span>
-              </div>
-              <h3 class="widget-title">Call Us</h3>
-              <div class="time-schedule">
-                <span><a href="tel:(888) 216-2817">(888) 216-2817</a></span><br>
-                <span><a href="tel:(838) 221-4002">(838) 221-4002</a></span>
-              </div>
-            </div>
-          </div>
+      </article>
+      <article class="tc reveal">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-txt">"The Hair Care Combo is totally worth every rupee. I replaced my expensive chemical shampoo with Reetha + Shikakai — dandruff is completely gone in just 3 weeks. My wife loves it too!"</p>
+        <div class="tc-auth">
+          <img class="tc-av" src="https://i.pravatar.cc/80?img=12" alt="Rohit Verma" loading="lazy"/>
+          <div><div class="tc-nm">Rohit Verma</div><div class="tc-loc">Jaipur, Rajasthan</div><div class="tc-ver">✓ Verified Purchase</div></div>
         </div>
+      </article>
+      <article class="tc reveal">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-txt">"Mere bete ke baal bohot weak the. Doctor ne natural solution suggest kiya. HerbSutra ka combo try kiya — 2 mahine mein amazing result! Packaging bhi fresh thi, sab kuch bilkul natural smell wala."</p>
+        <div class="tc-auth">
+          <img class="tc-av" src="https://i.pravatar.cc/80?img=32" alt="Sunita Agarwal" loading="lazy"/>
+          <div><div class="tc-nm">Sunita Agarwal</div><div class="tc-loc">Agra, UP</div><div class="tc-ver">✓ Verified Purchase</div></div>
+        </div>
+      </article>
+      <article class="tc reveal">
+        <div class="tc-stars">★★★★☆</div>
+        <p class="tc-txt">"Very genuine brand! Shikakai powder is excellent quality — I've used cheap brands before and this is clearly different. Hair feels clean, soft, and not dry at all. Will definitely order again and try more products."</p>
+        <div class="tc-auth">
+          <img class="tc-av" src="https://i.pravatar.cc/80?img=25" alt="Anjali Mishra" loading="lazy"/>
+          <div><div class="tc-nm">Anjali Mishra</div><div class="tc-loc">Varanasi, UP</div><div class="tc-ver">✓ Verified Purchase</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-      </div> <!-- inner row -->
-    </div> <!-- col-sm-10 -->
-  </div> <!-- outer row -->
-</div>
+<!-- FAQ -->
+<section id="faq">
+  <div class="sw">
+    <header class="shdr ctr reveal">
+      <span class="stag">FAQ</span>
+      <h2 class="sh">Questions? We've Got Answers.</h2>
+    </header>
+    <div class="faq-l">
+      <div class="fi reveal">
+        <button class="fq" onclick="tF(this)">How do I use all three powders together? <span class="fa-arr">▾</span></button>
+        <div class="fa">Mix equal parts Amla, Reetha, and Shikakai powder with warm water or curd to form a smooth paste. Apply to scalp and hair, leave for 20–30 minutes, then rinse thoroughly with water. This acts as a complete natural hair wash and deep conditioning treatment. Use 2–3 times per week for best results.</div>
+      </div>
+      <div class="fi reveal">
+        <button class="fq" onclick="tF(this)">Are these safe for chemically treated or coloured hair? <span class="fa-arr">▾</span></button>
+        <div class="fa">Yes! Our 100% natural powders are free from harsh chemicals, making them safe for all hair types including chemically treated, coloured, and sensitive scalps. In fact, regular use can help repair damage caused by chemical treatments. We always recommend a small patch test before full application if you have a very sensitive scalp.</div>
+      </div>
+      <div class="fi reveal">
+        <button class="fq" onclick="tF(this)">How long will it take to see visible results? <span class="fa-arr">▾</span></button>
+        <div class="fa">Natural herbal products work gradually and build lasting results. Most customers notice reduced hair fall within 3–4 weeks, and visible improvement in texture, shine, and scalp health within 6–8 weeks of consistent use. Remember — natural remedies create permanent change, unlike quick chemical fixes that often damage hair long-term.</div>
+      </div>
+      <div class="fi reveal">
+        <button class="fq" onclick="tF(this)">What is the ordering and delivery process? <span class="fa-arr">▾</span></button>
+        <div class="fa">Simply click "Order Now" to fill our easy Google Form with your product selection and delivery details. Our team will contact you within 24 hours to confirm your order and payment method. Products are dispatched within 1–2 business days and delivered pan-India within 3–6 business days depending on your location.</div>
+      </div>
+      <div class="fi reveal">
+        <button class="fq" onclick="tF(this)">What if I receive a damaged or wrong product? <span class="fa-arr">▾</span></button>
+        <div class="fa">Customer satisfaction is our top priority. If you receive a damaged, incorrect, or tampered product, please contact us via WhatsApp or email within 48 hours of delivery with clear photos. We will promptly arrange a replacement or full refund. We take product quality extremely seriously and every complaint is addressed with care.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-			</div>
-			<div class="copyright-text text-center">
-				 <p class="text-center text-white">© 2025 <a href="index.html#">Satellitekart</a>. All Rights Reserved.</p>
-			</div>
-		</footer>
-	<!-- End of footer section
-		============================================= -->
-    
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sw">
+    <header class="shdr reveal">
+      <span class="stag">Get in Touch</span>
+      <h2 class="sh">We'd Love to Hear from You</h2>
+      <p class="ss">Have questions about our products, want to place a bulk order, or just want to say hi? Reach out — we're friendly and fast!</p>
+    </header>
+    <div class="cg">
+      <div class="reveal">
+        <div class="ci">
+          <div class="ci-ic">📞</div>
+          <div><div class="ci-lbl">Phone & WhatsApp</div><a href="tel:8959531068" class="ci-val">+91 8959531068</a></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic">✉️</div>
+          <div><div class="ci-lbl">Email Us</div><a href="mailto:herbsutraofficial@gmail.com" class="ci-val">herbsutraofficial@gmail.com</a></div>
+        </div>
+        <div class="ci">
+          <div class="ci-ic">🛒</div>
+          <div><div class="ci-lbl">Place Your Order</div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="ci-val">Fill Our Order Form →</a></div>
+        </div>
+        <div class="social-row">
+          <button class="btn-ig" onclick="toast('Instagram coming soon! 📸 Follow us there 🌿')">📸 Instagram</button>
+          <button class="btn-yt" onclick="toast('YouTube channel launching soon! ▶ Subscribe for tips 🌿')">▶ YouTube</button>
+        </div>
+      </div>
+      <div class="contact-card reveal">
+        <div>
+          <div class="cc-ttl">Ready to Order?</div>
+          <p class="cc-sub">Place your order in under 2 minutes using our simple Google Form. No account needed — just fill your details and we'll handle the rest!</p>
+          <div class="cc-form-note">✓ Order confirmation within 24 hours<br/>✓ Safe payment options<br/>✓ Pan-India delivery</div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener" class="btn-form">🛒 Order Now — It's Easy!</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- For js Library -->
-    <script src="www.satellitekart.com/assets/js/jquery.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/bootstrap.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/popper.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/owl.carousel.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/jarallax.js"></script>
-    <script src="www.satellitekart.com/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/Chart.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/circle-progress.js"></script>
-    <script src="www.satellitekart.com/assets/js/appear.js"></script>
-    <script src="www.satellitekart.com/assets/js/wow.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/utils.js"></script>
-    <script src="www.satellitekart.com/assets/js/tilt.jquery.min.js"></script>
-    <script src="www.satellitekart.com/assets/js/script.js"></script>
-    <script src="www.satellitekart.com/assets/js/gmap3.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
-    
-    
-    
-   
+<!-- FOOTER -->
+<footer>
+  <div class="fw">
+    <div class="ft">
+      <div>
+        <div class="fl-name">🌿 HerbSutra</div>
+        <p class="fl-desc">Pure Ayurvedic herbal products for your hair and health. Rooted in nature, trusted by thousands of Indians.</p>
+        <div class="fl-badges">
+          <span class="fl-badge">100% Natural</span>
+          <span class="fl-badge">No Chemicals</span>
+          <span class="fl-badge">Freshly Packed</span>
+        </div>
+      </div>
+      <div>
+        <div class="fc-ttl">Quick Links</div>
+        <nav class="fc-links">
+          <a href="#products">Products</a>
+          <a href="#upcoming">Coming Soon</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="#about">About Us</a>
+          <a href="#testi">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <div class="fc-ttl">Shop</div>
+        <nav class="fc-links">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener">Amla Powder – ₹299</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener">Reetha Powder – ₹299</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener">Shikakai Powder – ₹299</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJe58MwoYO_nioucPZUZn5RtTvZXjw187i0zXlWCCm9kZEw/viewform" target="_blank" rel="noopener">Combo Pack – ₹599</a>
+        </nav>
+      </div>
+    </div>
+    <div class="fb">
+      <span class="fb-copy">© 2024 HerbSutra. All rights reserved.</span>
+      <span class="fb-love">Made with <span>💚</span> for natural wellness</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
 <script>
-  const form = document.getElementById("contact_form");
-  const status = document.getElementById("alert-msg");
+// Hamburger
+const hbg=document.getElementById('hbg'),mob=document.getElementById('mob');
+hbg.addEventListener('click',()=>mob.classList.toggle('open'));
+function cM(){mob.classList.remove('open')}
 
-  async function handleSubmit(event) {
-    event.preventDefault();
+// Navbar
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',scrollY>20);
+  document.getElementById('btt').classList.toggle('on',scrollY>400);
+});
 
-    const data = new FormData(form);
+// Reveal on scroll
+const ro=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');ro.unobserve(e.target)}})
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-    status.innerHTML = '<div class="alert alert-info">Sending...</div>';
+// FAQ
+function tF(btn){
+  const fi=btn.parentElement,open=fi.classList.contains('open');
+  document.querySelectorAll('.fi.open').forEach(f=>f.classList.remove('open'));
+  if(!open)fi.classList.add('open');
+}
 
-    fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        status.innerHTML = '<div class="alert alert-success">Thanks! Your message has been sent.</div>';
-        form.reset();
-      } else {
-        response.json().then(data => {
-          if (data.errors) {
-            status.innerHTML = '<div class="alert alert-danger">' +
-              data.errors.map(error => error.message).join(", ") +
-              '</div>';
-          } else {
-            status.innerHTML = '<div class="alert alert-danger">Oops! Something went wrong.</div>';
-          }
-        });
-      }
-    })
-    .catch(() => {
-      status.innerHTML = '<div class="alert alert-danger">Oops! Something went wrong.</div>';
-    });
-  }
+// Notify
+function notify(btn){
+  if(btn.classList.contains('done'))return;
+  btn.classList.add('done');
+  btn.textContent='✓ You\'ll be notified!';
+  toast('You\'re on the list! We\'ll notify you when it launches 🌿');
+}
 
-  form.addEventListener("submit", handleSubmit);
+// Toast
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('on');
+  setTimeout(()=>t.classList.remove('on'),3500);
+}
 </script>
-
 </body>
-
 </html>
